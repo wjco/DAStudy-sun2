@@ -12,3 +12,17 @@
     - matplotlib, seaborn
     - requests, json
     - scikit-learn
+---
+### 호텔 노쇼 고객 예측 분석
+- 설명: 호텔 투숙객들의 예약 데이터로부터 노쇼 고객을 식별할 방법을 발견하고, 이를 방지할 액션 아이템 도출
+- 사용한 데이터셋
+    - [Hotel Bookings Analysis](https://www.kaggle.com/datasets/thedevastator/hotel-bookings-analysis): 호텔 예약, 취소 및 투숙객 세부 정보에 대한 포괄적인 데이터셋
+- 진행 절차 및 내용
+    - 데이터 로딩, 컬럼별 EDA, 상관관계 확인
+    - 데이터 전처리, 노쇼에 대한 **분류 모델** 생성, 하이퍼 파라미터 튜닝
+    - 컬럼 간 중요도 도출, 영향력 높은 컬럼의 **의존성 플롯** 확인
+- 사용한 스킬셋
+    - pandas, numpy
+    - matplotlib, seaborn
+    - scikit-learn
+    - pdpbox
