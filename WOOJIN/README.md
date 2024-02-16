@@ -6,3 +6,36 @@
 - 진행 절차 및 내용
     - **API 데이터 로딩**하여 각 컬럼들의 분포 확인 및 시각화, 필요한 파생 컬럼 생성
     - 서울시 입장의 가상 시나리오 하 공공자전거 이용건수 예측 **ML 모델 생성** 및 튜닝
+    - 예측 이용자 수가 낮은 날과 높은 날의 기준 설정하여 **정책 제안**
+- 사용한 스킬셋
+    - pandas, numpy
+    - matplotlib, seaborn
+    - requests, json
+    - scikit-learn
+---
+### 호텔 노쇼 고객 예측 분석
+- 설명: 호텔 투숙객들의 예약 데이터로부터 노쇼 고객을 식별할 방법을 발견하고, 이를 방지할 액션 아이템 도출
+- 사용한 데이터셋
+    - [Hotel Bookings Analysis](https://www.kaggle.com/datasets/thedevastator/hotel-bookings-analysis): 호텔 예약, 취소 및 투숙객 세부 정보에 대한 포괄적인 데이터셋
+- 진행 절차 및 내용
+    - 데이터 로딩, 컬럼별 EDA, 상관관계 확인
+    - 데이터 전처리, 노쇼에 대한 **분류 모델** 생성, 하이퍼 파라미터 튜닝
+    - 컬럼 간 중요도 도출, 영향력 높은 컬럼의 **의존성 플롯** 확인
+- 사용한 스킬셋
+    - pandas, numpy
+    - matplotlib, seaborn
+    - scikit-learn
+    - pdpbox
+---
+### 은행 이탈 유저 예측 모델 개발
+- 설명: 유저가 계좌 이용을 계속할지, 혹은 해지할지를 예측하는 이진 분류 Kaggle Competition
+- 사용한 데이터셋
+    - [Binary Classification with a Bank Churn Dataset(Playground Series - Season 4, Episode 1)](https://www.kaggle.com/competitions/playground-series-s4e1)
+- 진행 절차 및 내용
+    - 컬럼별 EDA, 특성에 맞는 **전처리 및 스케일링**
+    - **분류 모델** 비교, 적합한 모델 선정, 하이퍼파라미터 튜닝
+    - Kaggle Competition 제출
+- 사용한 스킬셋
+    - pandas
+    - matplotlib, seaborn
+    - scikit-learn
